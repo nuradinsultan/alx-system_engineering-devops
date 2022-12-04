@@ -1,1 +1,1 @@
-This is a shell permissions projet
+Change group from hello to school 
