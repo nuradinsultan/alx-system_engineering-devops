@@ -1,1 +1,1 @@
-Change owner to Vincent group to staff
+Change owner of hello to Vincent and group to staff
