@@ -1,0 +1,55 @@
+Here is  a schema that illustrates the flow of the request when you type https://www.google.com in your browser and press Enter:
+
++----------------+                    +---------------------+
+|                |                    |                     |
+|   Your Browser +---- DNS Resolution + DNS Server          |
+|                |                    |                     |
++----------------+                    +---------------------+
+           |                                       |
+           |                                       |
+           | TCP/IP Connection                     | DNS Response
+           |                                       |
+           v                                       v
++----------------+                    +---------------------+
+|                |                    |                     |
+|  Load Balancer +---- HTTPS/SSL Handshake + Your Browser    |
+|                |                    |                     |
++----------------+                    +---------------------+
+           |                                       |
+           |                                       |
+           | Load Balancer Routing                 | HTTPS/SSL Response
+           |                                       |
+           v                                       v
++----------------+                    +---------------------+
+|                |                    |                     |
+|   Firewall     |                    |  Web Server         |
+|                |                    |                     |
++----------------+                    +---------------------+
+           |                                       |
+           |                                       |
+           | Authorization Check                  | HTTP Request
+           |                                       |
+           v                                       v
++----------------+                    +---------------------+
+|                |                    |                     |
+| Application    |                    |  Database           |
+|   Server       |                    |                     |
+|                |                    |                     |
++----------------+                    +---------------------+
+           |                                       |
+           |                                       |
+           | Processing and Generating            | Query Results
+           | Dynamic Content                       |
+           v                                       v
++----------------+                    +---------------------+
+|                |                    |                     |
+|  Web Server    |                    |  Your Browser       |
+|                |                    |                     |
++----------------+                    +---------------------+
+           |                                       |
+           |                                       |
+           | HTTP Response                         | Render Webpage
+           |                                       |
+           v                                       v
+
+The above schema shows the sequence of events that occur as the browser sends a request to the server and receives a response. Each step in the process is essential to ensure that the request is processed correctly and that the response is sent back securely to the browser.
