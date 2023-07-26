@@ -26,4 +26,4 @@ if __name__ == '__main__':
             "username": username
         })
     with open('{}.json'.format(employeeId), 'w') as filename:
-        json.dump(dictionary, filename
+        json.dump(dictionary, filename)
