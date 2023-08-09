@@ -37,5 +37,5 @@ Conduct a comprehensive code review of the web application code.
 Implement additional automated tests to detect memory leaks.
 Update monitoring tools to include more granular resource usage data.
 Provide additional training for operations team members on troubleshooting web application issues.
-you can check out my blogpost on https://medium.com/@marameref
+you can check out my blogpost on https://
 /0x19-postmortem-an-alx-software-engineering for more details
