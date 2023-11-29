@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Installs nginx server
+# Installs nginx server no way
 apt-get update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
