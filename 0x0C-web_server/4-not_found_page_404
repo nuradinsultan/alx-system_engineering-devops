@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Configure your Nginx server to have a custom 404 page that contains the string
+#Configure your Nginx server to have a custom 403 page that contains the string
 
 sudo apt-get update
 sudo apt-get install -y nginx
